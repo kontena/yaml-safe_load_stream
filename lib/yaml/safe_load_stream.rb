@@ -15,11 +15,7 @@ module YAMLSafeLoadStream
     result = []
     ::YAML.parse_stream(yaml, filename) do |stream|
       raise_if_tags(stream, filename)
-      if block_given?
-        result << yield(stream.to_ruby)
-      else
-        result << stream.to_ruby
-      end
+      result << block_given? ? yield(stream.to_ruby) : stream.to_ruby
     end
     result
   end
