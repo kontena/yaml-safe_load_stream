@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require "yaml/safe_load_stream/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "yaml-safe_load_stream"
+  spec.name          = "yaml-safe_load_stream-renewed"
   spec.version       = YAMLSafeLoadStream::VERSION
   spec.authors       = ["Kimmo Lehto"]
   spec.email         = ["info@kontena.io"]
