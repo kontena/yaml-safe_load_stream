@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require "yaml/safe_load_stream/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "yaml-safe_load_stream"
+  spec.name          = "yaml-safe_load_stream-renewed"
   spec.version       = YAMLSafeLoadStream::VERSION
   spec.authors       = ["Kimmo Lehto"]
   spec.email         = ["info@kontena.io"]
@@ -17,9 +17,9 @@ Gem::Specification.new do |spec|
   spec.files         = Dir[*%w(lib/yaml/safe_load_stream.rb lib/yaml/safe_load_stream/core-ext.rb LICENSE README.md)]
   spec.require_paths = ["lib"]
 
-  spec.required_ruby_version = '~> 2.3'
+  #spec.required_ruby_version = '~> 2.3'
 
-  spec.add_development_dependency "bundler"
+  #spec.add_development_dependency "bundler"
   spec.add_development_dependency "rubocop"
-  spec.add_development_dependency "rspec", "~> 3.0"
+  spec.add_development_dependency "rspec"#, "~> 3.0"
 end
